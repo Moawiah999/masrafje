@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mymasrafja/screen/contactus.dart';
+import 'package:mymasrafja/screen/membership.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return Contact_us();
+    return Membership();
   }
 }
