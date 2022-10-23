@@ -14,20 +14,33 @@ class _MembershipState extends State<Membership> {
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.white,
-        title: Text(
-          "Membership",
-          style: TextStyle(color: Colors.black),
-        ),
+        // title: Text(
+        //   "Membership",
+        //   style: TextStyle(color: Colors.grey.shade600),
+        // ),
       ),
       body: SafeArea(
         child: Column(
           // mainAxisAlignment: MainAxisAlignment.start,
           children: [
+            Padding(
+              padding: const EdgeInsets.only(left: 20),
+              child: Container(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  "Membership",
+                  style: TextStyle(color: Colors.grey.shade600, fontSize: 30),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 28,
+            ),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 20),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Colors.blue.shade900),
+                  color: Color.fromARGB(220, 2, 16, 143)),
               child: Center(
                 //     color: Colors.blue.shade900,
                 child: Container(
@@ -62,7 +75,7 @@ class _MembershipState extends State<Membership> {
                       ),
                       Text("\$ 5",
                           style: TextStyle(
-                              fontSize: 30,
+                              fontSize: 50,
                               fontWeight: FontWeight.bold,
                               color: Colors.white))
                     ],
