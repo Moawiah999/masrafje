@@ -47,9 +47,9 @@ class _RegistrationcompleteState extends State<Registrationcomplete> {
                   padding: const EdgeInsets.all(18.0),
                   child: TextField(
                     decoration: InputDecoration(
-                      suffixIcon: Icon(
-                        Icons.add_circle_outline,
-                      ),
+                      suffixText: "Jod",
+                      suffixIcon: Icon(Icons.add_circle_outline_outlined),
+                      labelStyle: TextStyle(),
                       label: Text(
                         "Saving cash in your wallet",
                         style: TextStyle(
@@ -64,9 +64,11 @@ class _RegistrationcompleteState extends State<Registrationcomplete> {
                   padding: const EdgeInsets.all(18.0),
                   child: TextField(
                     decoration: InputDecoration(
+                      suffixText: "Jod",
                       hintText: "Add cash number",
                       suffixIcon: Icon(
-                        Icons.remove_circle_sharp,
+                        Icons.remove_circle_outline_outlined,
+                        color: Colors.blue.shade700,
                       ),
                       label: Text(
                         "Total oblegations",
@@ -136,15 +138,20 @@ class _RegistrationcompleteState extends State<Registrationcomplete> {
                   child: TextField(
                     decoration: InputDecoration(
                       hintText: "Add cash numbers",
-                      // suffixIcon: ElevatedButton.icon(onPressed: () {
-
-                      // }, icon: Icon(Icons.), label: label),
-                      label: Text(
-                        "Your monthly income",
-                        style: TextStyle(
-                            color: Colors.grey.shade500,
-                            fontSize: 18,
-                            fontWeight: FontWeight.w400),
+                      suffixText: "JOD",
+                      suffixStyle: TextStyle(
+                          color: Colors.blue.shade700,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600),
+                      label: Padding(
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Text(
+                          "Cash in your Physicals wallet",
+                          style: TextStyle(
+                              color: Colors.grey.shade500,
+                              fontSize: 18,
+                              fontWeight: FontWeight.w700),
+                        ),
                       ),
                     ),
                   ),
